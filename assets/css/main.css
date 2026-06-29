@@ -1,0 +1,94 @@
+/*ExS News main styles*/
+a:not([class]){
+	text-decoration: underline;
+}
+
+.topline a,
+.toplogo a,
+.title a,
+.entry-title a,
+.entry-footer a,
+.column-aside a,
+.top-nav a,
+.related-posts a,
+.footer a,
+.copyright a,
+.post-nav a,
+.comments-area a{
+	text-decoration: none;
+}
+
+blockquote a{
+	text-decoration: none !important;
+}
+
+.layout-cols .grid-item .has-post-thumbnail > .item-content{
+	padding-top: 1.5em;
+}
+
+.related-posts,
+#comments{
+	background-color: var(--colorBackground);
+	padding: 2.5em;
+}
+
+.btns-rounded .related-posts,
+.btns-rounded #comments{
+	border-radius: 8px;
+}
+
+.btns-round .related-posts,
+.btns-round #comments{
+	border-radius: 20px;
+}
+
+#reviews #comments{
+	background: transparent;
+	padding: 0;
+	margin-bottom: .5em;
+}
+
+.related-posts{
+	padding-bottom: 1.25em;
+}
+
+.single [itemtype].has-post-thumbnail > .item-content{
+	padding-top: 2.5em;
+}
+
+#header-image .topline + .toplogo{
+	margin-top: -.75em;
+}
+
+.pagination .nav-links > span{
+	text-align: center;
+	display: inline-block;
+	padding: 0;
+	min-width: 50px;
+	line-height: 50px;
+}
+
+.pagination .nav-links > a{
+	min-width: 50px;
+	text-align: center;
+	line-height: 50px;
+	padding: 0;
+	background-color: var(--colorMain);
+}
+
+.pagination .nav-links .svg-icon{
+	line-height: 46px;
+}
+
+.pagination .nav-links > a:hover{
+	color: var(--colorLight);
+	background-color: var(--colorDarkMuted);
+}
+
+.pagination .nav-links > a:hover .svg-icon svg{
+	fill: currentColor;
+}
+
+.mejs-container button{
+	padding: 0 !important;
+}
