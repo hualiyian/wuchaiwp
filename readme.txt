@@ -1,164 +1,27 @@
-=== Twenty Seventeen ===
-Contributors: wordpressdotorg
-Tested up to: 5.8
-Version: 2.8
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-patterns
+“吾侪主题&wuchaiwp”是一个WordPress体系中具有多种自定义机制的主题模板，可以做个人博客、企业官网、音频播客、友情链接网址导航等类型的网站，可以自定义扩展多种风格方向的页面和网站模板。
 
-== Description ==
+第一个版本是二零二一年十月十五日下午，在我自己的同名站点“吾侪专题wuchai.net”上发出的。这个主题最初是在wordpress官方主题Twenty Seventeen主题基础上修改而来的，当时没有修改太多。
 
-吾侪主题&wuchaiwp主题能够展现生动的页头视频，特色图片与文章浑然一体，让你的博客充满生机。它针对商业网站而设计，静态首页可以自定义多个不同的页面作为其段落。它也支持小工具、水平导航栏、社交网络菜单、自定义网站Logo等功能。它的非对称网格设计配合可自定义的配色系统让你的博客更具个性，还具备多种文章布局和样式让你在展示多媒体内容时更加得心应手。本主题是在wordpress官方主题Twenty Seventeen主题基础上开发而来的，在不同的语言、运用场景和设备上都能良好工作。
+现在，我选择了给它添加一个比较便捷的自定义机制，添加了首页、编辑页、文章详情页、归档页、创建自定义文章类型的自定义机制，可以在后台主题设置中选择创建不同的模板，并应用不同的模板页面。
 
-For more information about Twenty Seventeen please go to https://wordpress.org/support/article/twenty-seventeen/.
+在具体的使用场景和应用方向方面，我暂时选定了三个方向，一个是我自己常用的博客，一个是音频播客，一个是企业官网。当然了，也附加了一个友情链接类的方向。根据这几个方向，我创建了具体的对应的编辑页、文章详情页、归档页页面模板。而这其中，最重视的，也是花费时间和精力最多的，就是博客方向和企业官网方向的页面模板，而后者似乎更甚。
 
-== Installation ==
+在博客方面，我制作了一个适合的首页页面模板，我将其命名为多区域首页模板。以显示推荐文章、最新文章、分类之类的内容，也添加了小工具显示区域，能够通过小工具的方式扩展显示内容。
 
-1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
-2. Type in Twenty Seventeen in the search form and press the 'Enter' key on your keyboard.
-3. Click on the 'Activate' button to use your new theme right away.
-4. Go to https://wordpress.org/support/article/twenty-seventeen/ for a guide on how to customize this theme.
-5. Navigate to Appearance > Customize in your admin panel and customize to taste.
+在企业官网方面，我将归档页当做首页来进行修改，添加了顶部大图展示、企业简介、产品介绍、开发日志、案例展示、联系我们之类的区域。
 
-== Copyright ==
+添加了一个后台管理页面，专门来调整这个企业归档页页面，对每个区域进行了设置控制。通过后台调取自定义文章类型不同分类的文章，在归档页的不同区域显示。
 
-Twenty Seventeen WordPress Theme, Copyright 2016-2021 WordPress.org
-Twenty Seventeen is distributed under the terms of the GNU GPL
+我比较重视的，是产品简介和案例展示这两个区域，可以通过分类筛选来显示tab栏文章标题，而内容区域又设置了卡片列表、网格列表之类的不同选项，可以在后台设置选择。
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or
-(at your option) any later version.
+此外，在这里添加了一个比较重要的自定义机制，可以在后台这个企业管理菜单页面的区域设置中创建新的区域，尤其是可以复刻产品介绍、案例展示这两个区域的内容。也可以在这里调整归档页不同区域的位置顺序。
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
+而编辑页呢，我设置了一个切换字段的选项，可以根据文章内容类型类显示不同字段，比如产品介绍、案例展示之类的类型。
 
-Twenty Seventeen bundles the following third-party resources:
+当然了，单独作为归档页的话，是不足以成为企业官网的，我选择了用静态页面来将其设置为企业官网。原理是，创建自定义文章类型之后，会有一个唯一的slug标识，而归档页就是根据这个标识来显示的，可以在后台创建一个相同slug标识后缀的页面，然后在WordPress自定义模式中选择这个静态页面做主页。
 
-HTML5 Shiv, Copyright 2014 Alexander Farkas
-Licenses: MIT/GPL2
-Source: https://github.com/aFarkas/html5shiv
+除了自定义机制和应用场景以外，我还想说一下扩展功能。目前呢，依据WordPress原有的小工具、插件机制，我添加了文章详情页底部和首页底部的小工具展示区域，也添加了两个文章列表小工具，可以在这里调用，其他小工具也是可以调用的。插件的话，目前呢，我自己用了一个搜索框插件和作者空间插件，这都是之前制作的。也可以使用WordPress插件库里的其他插件来继续扩展和完善这个主题的功能。
 
-jQuery scrollTo, Copyright 2007-2015 Ariel Flesler
-License: MIT
-Source: https://github.com/flesler/jquery.scrollTo
+最后，说一下运行环境吧。目前，我的测试环境是Debian linux 12，apache2.4，php7.4，WordPress6.2.9，至于其他环境是否会出现异常，还未可知。如果有，之后再改吧。
 
-normalize.css, Copyright 2012-2016 Nicolas Gallagher and Jonathan Neal
-License: MIT
-Source: https://necolas.github.io/normalize.css/
-
-Font Awesome icons, Copyright Dave Gandy
-License: SIL Open Font License, version 1.1.
-Source: http://fontawesome.io/
-
-Bundled header image, Copyright Alvin Engler
-License: CC0 1.0 Universal (CC0 1.0)
-Source: https://unsplash.com/@englr?photo=bIhpiQA009k
-
-Bundled block pattern images, Copyright Solo Shutter
-License: CC0 1.0 Universal (CC0 1.0)
-Source: https://stocksnap.io/photo/striped-lines-BTNYMDDCBW
-        https://stocksnap.io/photo/striped-lines-5XWOPSWPWX
-
-Bundled block pattern image, Copyright Seacoast Sage
-License: CC0 1.0 Universal (CC0 1.0)
-Source: https://stocksnap.io/photo/striped-fabric-9CBVWF2CDU
-
-== Changelog ==
-
-= 2.8 =
-* Released: July 20, 2021
-
-https://codex.wordpress.org/Twenty_Seventeen_Theme_Changelog#Version_2.8
-
-= 2.7 =
-* Released: April 14, 2021
-
-https://codex.wordpress.org/Twenty_Seventeen_Theme_Changelog#Version_2.7
-
-= 2.6 =
-* Released: March 9, 2021
-
-https://codex.wordpress.org/Twenty_Seventeen_Theme_Changelog#Version_2.6
-
-= 2.5 =
-* Released: December 8, 2020
-
-https://codex.wordpress.org/Twenty_Seventeen_Theme_Changelog#Version_2.5
-
-= 2.4 =
-* Released: August 11, 2020
-
-https://codex.wordpress.org/Twenty_Seventeen_Theme_Changelog#Version_2.4
-
-= 2.3 =
-* Released: March 31, 2020
-
-https://codex.wordpress.org/Twenty_Seventeen_Theme_Changelog#Version_2.3
-
-= 2.2 =
-* Released: May 7, 2019
-
-https://codex.wordpress.org/Twenty_Seventeen_Theme_Changelog#Version_2.2
-
-= 2.1 =
-* Released: February 21, 2019
-
-https://codex.wordpress.org/Twenty_Seventeen_Theme_Changelog#Version_2.1
-
-= 2.0 =
-* Released: January 9, 2019
-
-https://codex.wordpress.org/Twenty_Seventeen_Theme_Changelog#Version_2.0
-
-= 1.9 =
-* Released: December 19, 2018
-
-https://codex.wordpress.org/Twenty_Seventeen_Theme_Changelog#Version_1.9
-
-= 1.8 =
-* Released: December 6, 2018
-
-https://codex.wordpress.org/Twenty_Seventeen_Theme_Changelog#Version_1.8
-
-= 1.7 =
-* Released: August 2, 2018
-
-https://codex.wordpress.org/Twenty_Seventeen_Theme_Changelog#Version_1.7
-
-= 1.6 =
-* Released: May 17, 2018
-
-https://codex.wordpress.org/Twenty_Seventeen_Theme_Changelog#Version_1.6
-
-= 1.5 =
-* Released: April 4, 2018
-
-https://codex.wordpress.org/Twenty_Seventeen_Theme_Changelog#Version_1.5
-
-= 1.4 =
-* Released: November 14, 2017
-
-https://codex.wordpress.org/Twenty_Seventeen_Theme_Changelog#Version_1.4
-
-= 1.3 =
-* Released: June 8, 2017
-
-https://codex.wordpress.org/Twenty_Seventeen_Theme_Changelog#Version_1.3
-
-= 1.2 =
-* Released: April 18, 2017
-
-https://codex.wordpress.org/Twenty_Seventeen_Theme_Changelog#Version_1.2
-
-= 1.1 =
-* Released: January 6, 2017
-
-https://codex.wordpress.org/Twenty_Seventeen_Theme_Changelog#Version_1.1
-
-= 1.0 =
-* Released: December 6, 2016
-
-Initial release
+GitHub代码仓库地址是https://github.com/hualiyian/wuchaiwp，欢迎大家测试使用，也欢迎大家提出修改意见。
